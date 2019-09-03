@@ -9,7 +9,7 @@ int main()
 	float dollars=0,balance=10000;
 	cout << "Exit with 0\n";
 	do{
-	cout << "Your balance = " << balance << endl;
+	cout << "Your balance = " << fixed << setprecision(2) << balance << endl;
 	cout << "Input command (1 or withdraw , 2 deposit) : ";
 	cin >> ch;
 	balance=update_balance(ch,dollars,balance);
